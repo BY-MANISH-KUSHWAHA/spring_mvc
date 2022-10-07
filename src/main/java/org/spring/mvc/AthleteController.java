@@ -13,12 +13,13 @@ import javax.validation.Valid;
 @RequestMapping("/athlete")
 public class AthleteController {
 
-
+    //http://localhost:8080/springmvc/athlete/showAthleteDetails
     @RequestMapping("/showAthleteForm")
     public String showAthlete(Model model){
         model.addAttribute("athlete",new Athlete()); // using model we assign Athlete attributes value using form
         return "athlete-form";
     }
+
 
 
     @RequestMapping("/showAthleteDetails") // Spring Validation

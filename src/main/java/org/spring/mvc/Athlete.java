@@ -2,10 +2,14 @@ package org.spring.mvc;
 
 import org.springframework.stereotype.Component;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Arrays;
 
 @Component
 public class Athlete {
+    @NotNull(message = "This is a required field.")
+    @Size(min = 1, message = "This is a required field must be greater than 1.")
     private String name;
     private String country;
 

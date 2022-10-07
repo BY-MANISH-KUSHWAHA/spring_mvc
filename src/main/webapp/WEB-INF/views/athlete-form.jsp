@@ -26,6 +26,7 @@
 <label>Name</label>
     <form:input path="name" />
     <form:errors path="name" cssClass="error"/>
+    <br>
     <form:select path = "country">
         <form:option label="IN" value="India"/>
         <form:option label="II" value="Ireland"/>
