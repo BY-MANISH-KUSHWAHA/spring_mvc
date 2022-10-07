@@ -9,7 +9,7 @@
 <h1>Player Form</h1>
 
 
-<form action="/springmvc/showPlayerDetail" method="GET">
+<form action="/springmvc/showPlayerDetail" method="POST">
     <label>Player Name:</label>
     <input type="text" name="playerName" />
     <input type="submit" value="Enter" />

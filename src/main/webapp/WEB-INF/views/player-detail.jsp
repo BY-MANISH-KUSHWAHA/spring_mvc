@@ -13,7 +13,16 @@
 <body>
 <h1>Player Detail </h1>
 
-<p> Player Name : ${name}</p>
+<%--model.addAttribute("pName",player.getName());--%>
+<%--model.addAttribute("pId",player.getId());--%>
+<%--model.addAttribute("pAge",player.getAge());--%>
+<%--model.addAttribute("pNationality",player.getNationality());--%>
+
+<p> Player Id : ${pId}</p>
+<p> Player Name : ${pName}</p>
+<p> Player Age : ${pAge}</p>
+<p> Player Nationality : ${pNationality}</p>
+
 
 </body>
 </html>
