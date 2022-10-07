@@ -39,7 +39,7 @@ public class PlayerController {
 //    }
 
     @RequestMapping(value = "/showPlayerDetail")
-    public String showPlayerDetail(@RequestParam("playerName") String playerName, Model model)// Without HttpServletRequest
+    public String showPlayerDetail(@RequestParam(value = "playerName",defaultValue = "Manish") String playerName, Model model)// Without HttpServletRequest
     {
         Player player = service.getPlayerByName(playerName);
         System.out.println(player);
