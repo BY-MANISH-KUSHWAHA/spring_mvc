@@ -26,6 +26,11 @@
     </form:select>
     <form:radiobutton path="rank" label="Grade 1" value="A" />
     <form:radiobutton path="rank" label="Grade 2" value="B" />
+    <br><br>
+    <form:checkbox path="tournaments" label="Indian Open Tour" value="Indian Open Tour"/>
+    <form:checkbox path="tournaments" label="Dublin Open Tour" value="Dublin Open Tour"/>
+    <form:checkbox path="tournaments" label="Polan Open Tour" value="Polan Open Tour"/>
+    <br>
     <input type="submit" value="Enter" />
 </form:form>
 
