@@ -32,7 +32,7 @@
         <form:option label="II" value="Ireland"/>
         <form:option label="PL" value="Poland"/>
     </form:select>
-    <form:errors path="rank" cssClass="error"/>
+<%--    <form:errors path="rank" cssClass="error"/>--%>
     <form:radiobutton path="rank" label="Grade 1" value="A" />
     <form:radiobutton path="rank" label="Grade 2" value="B" />
     <br><br>
@@ -42,6 +42,22 @@
     <br>
     <form:checkbox path="tournaments" label="Polan Open Tour" value="Polan Open Tour"/>
     <br>
+
+    <form:input path="designation"/>
+    <form:errors path="designation" cssClass="error"/>
+    <br>
+    <form:input path="dob"/>
+    <form:errors path="dob" cssClass="error"/>
+    <br>
+
+    <br>
+    <form:input path="email"/>
+    <form:errors path="email" cssClass="error"/>
+    <br>
+
+
+
+
     <input type="submit" value="Enter" />
 </form:form>
 

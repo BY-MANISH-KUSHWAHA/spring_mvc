@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="ISO-8859-1" %>
 
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <html>
 <head>
@@ -18,8 +19,9 @@
 <p>Name: ${athlete.name}</p>
 <p>Country: ${athlete.country}</p>
 <p>Rank: ${athlete.rank}</p>
-
-
+<p>Designation: ${athlete.designation}</p>
+<b>Dob: </b><fmt:formatDate value="${athlete.dob}" type="date" pattern="dd-MM-YYYY"/>
+<p>Email:${athlete.email}</p>
 <p>
     Tournaments List:
     <c:forEach var="tournament" items="${athlete.tournaments}">

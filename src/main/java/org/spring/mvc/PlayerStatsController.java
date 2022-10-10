@@ -11,16 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
 
-
 @Controller
-@RequestMapping("/athlete")
-public class AthleteController {
-
-    //http://localhost:8080/springmvc/athlete/showAthleteDetails
-    @RequestMapping("/showAthleteForm")
-    public String showAthlete(Model model){
-        model.addAttribute("athlete",new Athlete()); // using model we assign Athlete attributes value using form
-        return "athlete-form";
+@RequestMapping("/stats")
+public class PlayerStatsController {
+    @RequestMapping("/showPlayerStatsForm")
+    public String showPlayerStats(Model model){
+        model.addAttribute("playerStats",new PlayerStats()); // using model we assign Athlete attributes value using form
+        return "head-to-head";
     }
 
     @InitBinder
@@ -29,25 +26,17 @@ public class AthleteController {
         binder.registerCustomEditor(String.class,editor);
     } // initBinder is mapped to BindingResult in showAthleteDetails Method
 
-    @RequestMapping("/showAthleteDetails") // Spring Validation
-    public String showAthleteDetails(@Valid @ModelAttribute("athlete") Athlete myAthlete, BindingResult result){
+    @RequestMapping("/showPlayerStatsDetails") // Spring Validation
+    public String showPlayerStatsDetails(@Valid @ModelAttribute("playerStats") PlayerStats myPlayerStats, BindingResult result){
         // BindingResult bind the valid form to Model Validation method (variable).
-        System.out.println("Athlete Details: "+myAthlete);
+        System.out.println("Athlete Details: "+myPlayerStats);
 
         if(result.hasErrors()){
             System.out.println(result);
-           return "athlete-form";
+            return "head-to-head";
         }
 
-        return "athlete-details";
+        return "head-to-head-stats";
     }
-
-
-
-
-
-
-
-
 
 }
