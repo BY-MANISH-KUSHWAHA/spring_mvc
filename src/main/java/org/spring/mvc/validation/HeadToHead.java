@@ -17,8 +17,4 @@ public @interface HeadToHead {
     public Class<?> [] groups() default {};
 
     public Class<? extends Payload>[] payload() default {};
-
-
 }
-
-

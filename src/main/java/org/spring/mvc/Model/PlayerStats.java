@@ -1,6 +1,9 @@
 package org.spring.mvc.Model;
 
+import org.hibernate.validator.constraints.NotEmpty;
 import org.spring.mvc.validation.HeadToHead;
+
+import javax.validation.constraints.NotNull;
 
 public class PlayerStats {
 
@@ -9,6 +12,7 @@ public class PlayerStats {
     private String player2;
     private String player3;
 
+    @NotEmpty(message = "This field must be NotNull.")
     @HeadToHead
     private String headToHead;
 
