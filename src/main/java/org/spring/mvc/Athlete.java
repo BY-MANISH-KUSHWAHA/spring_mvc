@@ -1,5 +1,6 @@
 package org.spring.mvc;
 
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.stereotype.Component;
 
 import javax.validation.constraints.NotNull;
@@ -8,8 +9,9 @@ import java.util.Arrays;
 
 @Component
 public class Athlete {
-    @NotNull(message = "This is a required field.")
-    @Size(min = 1, message = "This is a required field must be greater than 1.")
+    //@NotNull(message = "This is a required field.") // Size limit
+    //@Size(min = 1, message = "This is a required field must be greater than 1.")
+    @NotEmpty(message = "This is a required Field.{@NotEmpty}")
     private String name;
     private String country;
 
