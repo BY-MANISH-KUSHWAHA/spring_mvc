@@ -1,4 +1,4 @@
-package org.spring.mvc;
+package org.spring.mvc.Model;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;

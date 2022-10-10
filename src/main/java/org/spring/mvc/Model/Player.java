@@ -1,4 +1,4 @@
-package org.spring.mvc;
+package org.spring.mvc.Model;
 
 
 import org.springframework.stereotype.Component;

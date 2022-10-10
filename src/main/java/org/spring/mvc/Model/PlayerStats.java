@@ -1,10 +1,15 @@
-package org.spring.mvc;
+package org.spring.mvc.Model;
+
+import org.spring.mvc.validation.HeadToHead;
 
 public class PlayerStats {
+
+
     private String player1;
     private String player2;
     private String player3;
 
+    @HeadToHead
     private String headToHead;
 
     public PlayerStats() {

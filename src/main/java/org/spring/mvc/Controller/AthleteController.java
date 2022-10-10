@@ -1,5 +1,6 @@
-package org.spring.mvc;
+package org.spring.mvc.Controller;
 
+import org.spring.mvc.Model.Athlete;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

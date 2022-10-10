@@ -1,5 +1,6 @@
-package org.spring.mvc;
+package org.spring.mvc.Service;
 
+import org.spring.mvc.Model.Player;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
