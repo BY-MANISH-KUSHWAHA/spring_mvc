@@ -9,12 +9,13 @@ import java.util.Arrays;
 
 @Component
 public class Athlete {
-    //@NotNull(message = "This is a required field.") // Size limit
-    //@Size(min = 1, message = "This is a required field must be greater than 1.")
-    @NotEmpty(message = "This is a required Field.{@NotEmpty}")
+    @NotNull(message = "This is a required field.") // Size limit
+    //@Size(min = 1, message = "This is a required field must be greater than 1.") // fail for white space pattern = "   "
+    //@NotEmpty(message = "This is a required Field.{@NotEmpty}")
     private String name;
     private String country;
 
+    @NotNull(message = "This is a required field.") // Size limit
     private String rank; // A , B , C , D
 
     private String[] tournaments;
